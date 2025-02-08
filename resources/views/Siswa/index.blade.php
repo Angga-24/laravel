@@ -1,9 +1,10 @@
 @extends('templates.layout')
 
-@section('title', 'Data Kelas')
+@section('title', 'Data Siswa')
 
 @section('konten')
 <br>
+<a href="{{route('siswa.create')}}" class="btn btn-primary mb-2 ">Tambah Data Siswa</a>
 <div class="row">
     <div class="col">
         <div class="card">
@@ -23,7 +24,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                @foreach ($data_siswa as $ds)
+                @foreach ($datasiswa as $ds)
                 <tr>
                                 <td>{{$loop->iteration}}</td>
                                 <td>{{$ds->nama}}</td>

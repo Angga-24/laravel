@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Lokal;
 use App\Models\Siswa;
+use Illuminate\View\View;
 use Illuminate\Http\Request;
 
 class siswacontroller extends Controller
@@ -14,7 +16,7 @@ class siswacontroller extends Controller
         return view('siswa.index', [
             "menu"=> "siswa",
             "title"=>" Data Siswa",
-            "data_siswa"=>$data_siswa
+            "datasiswa"=>$data_siswa
         ]);
     }
 
